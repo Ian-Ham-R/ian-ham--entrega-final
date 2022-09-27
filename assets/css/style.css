@@ -153,7 +153,7 @@
     .main-container .main .second-container .glass-background {
       background: linear-gradient(135deg, #ffffff1a, #ffffff00);
       box-shadow: 0.0625em 0.0625em 1.25em 0 #0000004d;
-      border-radius: 5em; }
+      border-radius: 0.38em; }
     .main-container .main .second-container .subcontainer {
       min-width: 16em;
       max-width: 24.5em;
