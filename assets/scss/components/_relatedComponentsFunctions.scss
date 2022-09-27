@@ -1,0 +1,19 @@
+//BACKGROUND GLASS EFFECT
+.glass-background {
+    -webkit-backdrop-filter: blur(0.625em);
+    backdrop-filter: blur(0.625em);
+    box-shadow: 0 0.5em 2em 0 #0000005e;
+    border: 0.0625em solid #ffffff2e;
+}
+
+
+
+//DISABLE TEXT SELECTION 
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

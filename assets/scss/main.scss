@@ -1,0 +1,19 @@
+//BASE
+@import './base/typo';
+@import './base/reset';
+
+//UTILITIES
+
+
+//COMPONENTS
+@import './components/menuIcon';
+@import './components/relatedComponentsFunctions';
+
+//LAYOUTS
+@import './layout/mainContainer';
+@import './layout/header';
+@import './layout/footer';
+
+
+//VIEWS
+@import './views/indexView';
