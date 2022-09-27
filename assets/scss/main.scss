@@ -7,13 +7,15 @@
 
 //COMPONENTS
 @import './components/menuIcon';
-@import './components/relatedComponentsFunctions';
+@import './components/relatedCyF';
 
 //LAYOUTS
 @import './layout/mainContainer';
 @import './layout/header';
+@import './layout/menu';
 @import './layout/footer';
 
 
 //VIEWS
 @import './views/indexView';
+@import './views/aboutUsView';

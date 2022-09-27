@@ -77,6 +77,169 @@
   .header hr {
     margin: 0 8vw; } }
 
+.menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  background: linear-gradient(0deg, #8d84799a 0%, #ffffff9a 100%);
+  -webkit-backdrop-filter: blur(0.1875em);
+  backdrop-filter: blur(0.1875em);
+  transition: 0.5s;
+  transition-delay: 0.6s; }
+  .menu.active {
+    right: 0;
+    transition-delay: 1.5s; }
+  .menu__slideDownAdvice {
+    display: none; }
+  .menu__ul {
+    width: 70%;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center; }
+    .menu__ul .link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #545154;
+      font-size: 1.35em;
+      display: inline-block;
+      position: relative; }
+      .menu__ul .link::before, .menu__ul .link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0.125em;
+        background-color: #545154;
+        transform: scaleX(0);
+        transition: transform 0.25s; }
+      .menu__ul .link::before {
+        top: -0.1875em;
+        transform-origin: left; }
+      .menu__ul .link::after {
+        bottom: -0.1875em;
+        transform-origin: right; }
+      .menu__ul .link:hover::before, .menu__ul .link:hover::after {
+        transform: scale(1); }
+    .menu__ul .active::before, .menu__ul .active::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 0.125em;
+      background-color: #545154;
+      transform: scaleX(1);
+      transition: transform 0.25s; }
+  .menu .contact-button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5em;
+    color: #545154;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    transition: 0.4s;
+    position: relative; }
+    .menu .contact-button .button-border-line-t,
+    .menu .contact-button .button-border-line-r,
+    .menu .contact-button .button-border-line-b,
+    .menu .contact-button .button-border-line-l {
+      display: block;
+      background-color: #545154;
+      position: absolute;
+      width: 0;
+      height: 0;
+      transition: all 0.4s, opacity 0.1s 0.4s;
+      opacity: 0; }
+    .menu .contact-button .button-border-line-t {
+      left: -0.25em;
+      top: 0.2em;
+      rotate: 180deg; }
+    .menu .contact-button .button-border-line-b {
+      right: -0.25em;
+      top: 1.78em; }
+    .menu .contact-button .button-border-line-r {
+      rotate: 90deg;
+      right: -0.85em;
+      top: 1.022em; }
+    .menu .contact-button .button-border-line-l {
+      rotate: 90deg;
+      left: -0.85em;
+      top: 1.022em; }
+    .menu .contact-button:hover .button-border-line-r,
+    .menu .contact-button:hover .button-border-line-l {
+      width: 35%;
+      height: 0.125em;
+      transition: 0.8s, opacity 0.1s;
+      opacity: 1; }
+    .menu .contact-button:hover .button-border-line-t,
+    .menu .contact-button:hover .button-border-line-b {
+      width: 108%;
+      height: 0.125em;
+      transition: 0.8s, opacity 0.1s;
+      opacity: 1; }
+
+@keyframes slide-circle-animation {
+  0% {
+    bottom: 0; }
+  70% {
+    bottom: 40%; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    bottom: 40%; } }
+
+@media (max-height: 26.5625em) {
+  .menu__slideDownAdvice {
+    width: 18%;
+    top: 9em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4; }
+    .menu__slideDownAdvice p {
+      text-align: center; }
+    .menu__slideDownAdvice .swipe-icon {
+      width: 50%;
+      height: 3.6em;
+      margin-top: 0.2em;
+      display: flex;
+      justify-content: center; }
+      .menu__slideDownAdvice .swipe-icon i {
+        position: absolute;
+        bottom: 0;
+        animation: slide-circle-animation 3s infinite; }
+  .menu .left-advice {
+    left: 10vw; }
+  .menu .right-advice {
+    right: 10vw; }
+  .menu__ul {
+    width: 100%;
+    height: 40vh;
+    top: 9em;
+    display: inline-block;
+    overflow: scroll; }
+    .menu__ul li {
+      text-align: center;
+      margin-top: 2em; }
+    .menu__ul li:nth-child(1) {
+      margin-top: 0.5em; }
+    .menu__ul li:nth-child(5) {
+      margin-top: 1.4em; } }
+
 .footer {
   width: 100%;
   position: relative;
@@ -116,6 +279,9 @@
 
 .main-container .header {
   height: 10vh;
+  z-index: 7; }
+
+.main-container .menu {
   z-index: 6; }
 
 .main-container .background-video {
