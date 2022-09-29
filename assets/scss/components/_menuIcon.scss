@@ -39,5 +39,9 @@
                 transform: translateY(-0.4375em) rotate(90deg);
             }
         }
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
