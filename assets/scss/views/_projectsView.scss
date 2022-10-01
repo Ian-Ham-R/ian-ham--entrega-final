@@ -1,0 +1,302 @@
+.projects-main-container {
+    background-color: #E4E4E4;
+
+    .header {
+        height: 10vh;
+        z-index: 5;
+    }
+
+    .menu {
+        z-index: 4;
+    }
+
+    .main {
+        width: 100%;
+        height: 90vh;
+        padding-top: 5vh;
+        position: relative;
+        z-index: 2;
+
+        .title {
+            width: 80%;
+            height: 15%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                color: #858186;
+                font-size: 2em;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                line-height: 1em;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        .container {
+            width: 85%;
+            height: 85%;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            flex-flow: row wrap;
+            position: relative;
+            align-content: space-around;
+            justify-content: space-around;
+
+            .img {
+                width: 5.3em;
+                height: 5.3em;
+                border-radius: 100%;
+                filter: grayscale(100%);
+                opacity: 1;
+                transition: 0s;
+                position: relative;
+
+                .close-icon {
+                    width: 5.5em;
+                    height: 5.5em;
+                    opacity: 0;
+                    position: absolute;
+                    right: 0;
+
+                    span {
+                        display: block;
+                        width: 2.2em;
+                        height: 0.25em;
+                        border-radius: 1em;
+                        background-color: #ff003759;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        bottom: 50%;
+                        opacity: 0;
+
+                        &:nth-child(2) {
+                            transform: rotate(-45deg);
+                        }
+                    }
+
+                    &.active {
+                        width: 2.2em;
+                        height: 2.2em;
+                        opacity: 1;
+                        top: 0;
+                        right: 0;
+                        transition: 0s;
+
+                        span {
+                            opacity: 1;
+                            transition: 0.8s;
+                            transition-delay: 1.3s;
+                        }
+                    }
+                }
+            }
+
+            .project1,
+            .project2,
+            .project3,
+            .project4,
+            .project5,
+            .project6,
+            .project7,
+            .project8,
+            .project9 {
+                background-size: cover;
+                background-position: center;
+
+                &.active {
+                    width: 100%;
+                    height: 90%;
+                    border-radius: 0;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    filter: grayscale(0);
+                    transition: 1s;
+                    transition-delay: 0.3s;
+                }
+
+                &.hide {
+                    opacity: 0;
+                    position: absolute;
+                    top: -500em;
+                    transition-delay: 0s;
+                }
+            }
+
+            .project1 {
+                background-image: url('../img/projects/projectsImg1.jpeg');
+            }
+
+            .project2 {
+                background-image: url('../img/projects/projectsImg2.jpeg');
+            }
+
+            .project3 {
+                background-image: url('../img/projects/projectsImg3.jpeg');
+            }
+
+            .project4 {
+                background-image: url('../img/projects/projectsImg4.jpeg');
+            }
+
+            .project5 {
+                background-image: url('../img/projects/projectsImg5.jpeg');
+            }
+
+            .project6 {
+                background-image: url('../img/projects/projectsImg6.jpeg');
+            }
+
+            .project7 {
+                background-image: url('https://www.gob.mx/cms/uploads/article/main_image/105120/Palacio_Blog-13tn_.jpg');
+            }
+
+            .project8 {
+                background-image: url('https://fastly.4sqi.net/img/general/600x600/7442561_MfuMkuJXqfTcR9aqKtlZkvBCxzqwv21qj6wP2us2Vdw.jpg');
+            }
+
+            .project9 {
+                background-image: url('https://assets.isu.pub/document-structure/200225161100-a106cb0de0b0f60405056cf75bc5e5fd/v1/2723715b433e4dcb6de49648206f13a2.jpg');
+            }
+        }
+    }
+
+    .footer {
+        height: 15vh;
+        z-index: 3;
+    }
+}
+
+
+
+
+
+//MEDIA QUERIES
+
+//ORIENTATION: PORTRAIT
+
+@media (min-width: 26.5625em) {
+
+    .projects-main-container {
+    
+        .main {
+    
+            .title {
+    
+                h1 {
+                    font-size: 2em;
+                }
+            }
+    
+            .container {
+                width: 85%;
+                height: 85%;
+    
+                .img {
+                    width: 6.1em;
+                    height: 6.1em;
+
+                    .close-icon {
+                        width: 6.1em;
+                        height: 6.1em;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 48em) {
+
+    .projects-main-container {
+    
+        .main {
+    
+            .title {
+    
+                h1 {
+                    font-size: 2.8em;
+                }
+            }
+    
+            .container {
+                width: 85%;
+                height: 85%;
+    
+                .img {
+                    width: 8.8em;
+                    height: 8.8em;
+                    margin: 0 2em;
+
+                    .close-icon {
+                        width: 8.8em;
+                        height: 8.8em;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 90em) {
+
+    .projects-main-container {
+    
+        .main {
+    
+            .title {
+    
+                h1 {
+                    font-size: 3.5em;
+                }
+            }
+    
+            .container {
+                width: 90%;
+                height: 85%;
+    
+                .img {
+                    width: 9.9em;
+                    height: 9.9em;
+                    margin: 0 6em;
+
+                    .close-icon {
+                        width: 9.9em;
+                        height: 9.9em;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+//ORIENTATION: LANDSCAPE
+@media (max-height: 26.5625em) {
+
+    .main-container {
+
+        .header {
+            height: 6.4em;
+        }
+
+        .main {
+            height: 50em;
+        }
+
+        .footer {
+            height: 6.4em;
+        }
+    }
+
+}
