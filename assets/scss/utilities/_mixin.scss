@@ -1,0 +1,13 @@
+//THIS IS JUST A BASIC EXAMPLE OF MIXIN VAR
+
+
+//THE VARIABLE CREATED IN THIS FILE IS BEING 
+//USED IN THE _INDEXVIEW.SCSS FILE
+
+
+//MIXIN EXAMPLE VAR
+@mixin flex ($jus-con, $ali-ite) {
+    display: flex;
+    justify-content: $jus-con;
+    align-items: $ali-ite;
+}

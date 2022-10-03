@@ -360,11 +360,11 @@
     padding: 0.4em; } }
 
 @media (max-height: 26.5625em) {
-  .main-container .header {
+  .index-main-container .header {
     height: 6.4em; }
-  .main-container .main {
+  .index-main-container .main {
     height: 15.625em; }
-  .main-container .footer {
+  .index-main-container .footer {
     height: 6.4em; } }
 
 .aboutUs-main-container {
@@ -574,20 +574,6 @@
     top: -24em;
     opacity: 0; } }
 
-@keyframes x {
-  0% {
-    top: 0; }
-  26% {
-    top: -6em; }
-  49% {
-    top: -12em; }
-  72% {
-    top: -18em; }
-  95% {
-    top: -24em; }
-  100% {
-    top: 0; } }
-
 @media (min-width: 23.4375em) {
   .aboutUs-main-container .main .sectionTwo .customers-container p {
     width: 55%;
@@ -657,11 +643,11 @@
     width: 15.5%; } }
 
 @media (max-height: 26.5625em) {
-  .main-container .header {
+  .aboutUs-main-container .header {
     height: 6.4em; }
-  .main-container .main {
+  .aboutUs-main-container .main {
     height: 97em; }
-  .main-container .footer {
+  .aboutUs-main-container .footer {
     height: 6.4em; } }
 
 .projects-main-container {
@@ -844,11 +830,11 @@
         height: 9.9em; } }
 
 @media (max-height: 26.5625em) {
-  .main-container .header {
+  .projects-main-container .header {
     height: 6.4em; }
-  .main-container .main {
+  .projects-main-container .main {
     height: 50em; }
-  .main-container .footer {
+  .projects-main-container .footer {
     height: 6.4em; } }
 
 .materials-main-container {
@@ -1110,9 +1096,179 @@
     margin-top: 3.8em; } }
 
 @media (max-height: 26.5625em) {
-  .main-container .header {
+  .materials-main-container .header {
     height: 6.4em; }
-  .main-container .main {
+  .materials-main-container .main {
     height: 45em; }
-  .main-container .footer {
+  .materials-main-container .footer {
+    height: 6.4em; } }
+
+.contact-main-container {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: repeat(3, auto);
+  gap: 0.1em 0;
+  grid-template-areas: "heaeder" "main" "footer";
+  background-color: #E4E4E4; }
+  .contact-main-container .header {
+    grid-area: heaeder;
+    height: 10vh;
+    z-index: 5; }
+  .contact-main-container .menu {
+    z-index: 4; }
+  .contact-main-container .main {
+    grid-area: main;
+    width: 100%;
+    height: 87vh;
+    margin-top: 1.5em;
+    position: relative;
+    z-index: 2; }
+    .contact-main-container .main .container {
+      width: 95%;
+      max-width: 70em;
+      height: 98%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contact-main-container .main .container .form-wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: #eee;
+        border-radius: 3em;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.288);
+        position: relative;
+        overflow: hidden; }
+        .contact-main-container .main .container .form-wrapper .background {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(130deg, #545154, #858186);
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+          z-index: 50; }
+          .contact-main-container .main .container .form-wrapper .background .undo {
+            width: 50%;
+            height: 5em;
+            position: absolute;
+            left: 25%;
+            top: calc(50% - 2.05em); }
+            .contact-main-container .main .container .form-wrapper .background .undo span {
+              width: 60%;
+              height: 0.3em;
+              display: block;
+              border-radius: 1em;
+              background-color: #ffffffb0;
+              transform: rotate(45deg);
+              opacity: 0;
+              position: absolute;
+              left: 18%;
+              top: calc(50% - 0.15em); }
+              .contact-main-container .main .container .form-wrapper .background .undo span:nth-child(2) {
+                transform: rotate(-45deg); }
+          .contact-main-container .main .container .form-wrapper .background button {
+            width: 80%;
+            height: 5em;
+            border: 0.1em solid #ffffff;
+            border-radius: 3em;
+            background-color: transparent;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+            transform: translateX(-50%);
+            cursor: pointer;
+            position: absolute;
+            top: calc(50% - 5em);
+            left: 50%;
+            transition: 0.5s;
+            transition-delay: 0.5s; }
+          .contact-main-container .main .container .form-wrapper .background .pulse {
+            box-shadow: 0 0 0 #ffffff44;
+            animation: pulse 2s infinite; }
+            .contact-main-container .main .container .form-wrapper .background .pulse:hover {
+              animation: none; }
+        .contact-main-container .main .container .form-wrapper .signup-form {
+          width: 75%;
+          height: 100%;
+          padding: 10% 3%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+          position: absolute;
+          top: 0;
+          left: -75%; }
+          .contact-main-container .main .container .form-wrapper .signup-form h1 {
+            width: 85%;
+            color: #858186;
+            font-size: 2.5em;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase; }
+          .contact-main-container .main .container .form-wrapper .signup-form p {
+            color: #858186;
+            font-size: 1.6em;
+            font-weight: 400;
+            text-align: center; }
+          .contact-main-container .main .container .form-wrapper .signup-form button {
+            box-shadow: 0.3125em 0.3125em 0.625em #b0b0b0, -0.3125em -0.3125em 0.625em #eeeeee; }
+      .contact-main-container .main .container.change .background {
+        width: 25%; }
+        .contact-main-container .main .container.change .background .undo span {
+          opacity: 1;
+          transition: 0.5s;
+          transition-delay: 0.6s; }
+        .contact-main-container .main .container.change .background button {
+          overflow: hidden;
+          color: #ffffff00;
+          transition: 0.1s; }
+        .contact-main-container .main .container.change .background .pulse {
+          animation: none; }
+      .contact-main-container .main .container.change .signup-form {
+        transition-delay: 0.5s;
+        left: 25%; }
+    .contact-main-container .main .input-group {
+      width: 90%;
+      position: relative; }
+      .contact-main-container .main .input-group input {
+        width: 100%;
+        height: 4em;
+        padding: 0.5em 1em;
+        background-color: #E4E4E4;
+        border: none;
+        border-radius: 0.5em;
+        background: #E4E4E4;
+        box-shadow: inset 0.3125em 0.3125em 0.625em #c2c2c2, inset -0.3125em -0.3125em 0.625em #ffffff; }
+    .contact-main-container .main button {
+      width: 12em;
+      height: 4em;
+      background-color: #858186;
+      border: none;
+      border-radius: 3em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #E4E4E4;
+      margin-top: 3em;
+      cursor: pointer; }
+  .contact-main-container .footer {
+    grid-area: footer;
+    height: 15vh;
+    z-index: 3; }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #ffffff77; }
+  70% {
+    box-shadow: 0 0 0 0.625em #ffffff00; }
+  100% {
+    box-shadow: 0 0 0 0 #ffffff00; } }
+
+@media (max-height: 26.5625em) {
+  .contact-main-container .header {
+    height: 6.4em; }
+  .contact-main-container .main {
+    height: 40em; }
+  .contact-main-container .footer {
     height: 6.4em; } }

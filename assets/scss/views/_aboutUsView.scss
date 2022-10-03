@@ -299,33 +299,6 @@
     }
 }
 
-@keyframes x {
-
-    0% {
-        top: 0;
-    }
-
-    26% {
-        top: -6em;
-    }
-
-    49% {
-        top: -12em;
-    }
-
-    72% {
-        top: -18em;
-    }
-
-    95% {
-        top: -24em;
-    }
-
-    100% {
-        top: 0;
-    }
-}
-
 
 
 
@@ -519,7 +492,7 @@
 
 @media (max-height: 26.5625em) {
 
-    .main-container {
+    .aboutUs-main-container {
 
         .header {
             height: 6.4em;
