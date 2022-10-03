@@ -533,40 +533,60 @@
             left: 0.8em;
             bottom: -3em; }
           .aboutUs-main-container .main .sectionTwo .customers-container .subcontainer .dynamic-logos {
-            height: 5em;
+            height: 6em;
             overflow: hidden;
             position: relative; }
             .aboutUs-main-container .main .sectionTwo .customers-container .subcontainer .dynamic-logos li {
-              height: 5em;
+              height: 6em;
               text-align: center;
               list-style: none;
               display: flex;
               flex-direction: column;
               justify-content: center;
               position: relative;
-              animation: clients-slide 15s infinite; }
-            .aboutUs-main-container .main .sectionTwo .customers-container .subcontainer .dynamic-logos li:nth-child(1) {
-              opacity: 0; }
+              animation: clients-slide 16s infinite; }
+              .aboutUs-main-container .main .sectionTwo .customers-container .subcontainer .dynamic-logos li img {
+                width: 6em;
+                height: auto; }
+            .aboutUs-main-container .main .sectionTwo .customers-container .subcontainer .dynamic-logos li:nth-child(4) img {
+              width: 5.8em; }
   .aboutUs-main-container .footer {
     height: 15vh;
     z-index: 3; }
 
 @keyframes clients-slide {
+  0% {
+    top: 0;
+    opacity: 0; }
   5% {
+    top: 0;
     opacity: 1; }
-  20% {
-    top: -0em; }
-  40% {
-    top: -5em; }
-  60% {
-    top: -10em; }
-  80% {
-    top: -15em; }
+  30% {
+    top: -6em; }
+  50% {
+    top: -12em; }
+  70% {
+    top: -18em; }
   95% {
-    opacity: 1;
-    top: -20em; }
-  98% {
+    top: -24em;
+    opacity: 1; }
+  100% {
+    top: -24em;
     opacity: 0; } }
+
+@keyframes x {
+  0% {
+    top: 0; }
+  26% {
+    top: -6em; }
+  49% {
+    top: -12em; }
+  72% {
+    top: -18em; }
+  95% {
+    top: -24em; }
+  100% {
+    top: 0; } }
 
 @media (min-width: 23.4375em) {
   .aboutUs-main-container .main .sectionTwo .customers-container p {
@@ -897,9 +917,9 @@
               box-shadow: 0 0.8em 1.2em #00000067;
               background-size: cover; }
             .materials-main-container .main .carousel .carousel-inner .carousel-item .carousel-item-flex-container .material1 {
-              background-image: url("https://i.pinimg.com/originals/bb/74/f7/bb74f714d3b0082ca1831d6e7cec3b82.jpg"); }
+              background-image: url("https://t3.ftcdn.net/jpg/05/31/09/50/240_F_531095088_WXPM5TldwuFl1YpHqwM6nC5Iqc2pRgH0.jpg"); }
             .materials-main-container .main .carousel .carousel-inner .carousel-item .carousel-item-flex-container .material2 {
-              background-image: url("https://static.wixstatic.com/media/35d0ce_f09aeb35a3c14763ac610e1bc86e0336~mv2.jpg/v1/fill/w_584,h_438,fp_0.50_0.50,lg_1,q_80,enc_auto/35d0ce_f09aeb35a3c14763ac610e1bc86e0336~mv2.jpg"); }
+              background-image: url("../img/materials/basalto.jpeg"); }
             .materials-main-container .main .carousel .carousel-inner .carousel-item .carousel-item-flex-container .material3 {
               background-image: url("https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946__340.jpg"); }
             .materials-main-container .main .carousel .carousel-inner .carousel-item .carousel-item-flex-container .material4 {

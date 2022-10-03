@@ -221,23 +221,31 @@
                     }
 
                     .dynamic-logos {
-                        height: 5em;
+                        height: 6em;
                         overflow: hidden;
                         position: relative;
 
                         li {
-                            height: 5em;
+                            height: 6em;
                             text-align: center;
                             list-style: none;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             position: relative;
-                            animation: clients-slide 15s infinite;
+                            animation: clients-slide 16s infinite;
+
+                            img {
+                                width: 6em;
+                                height: auto;
+                            }
                         }
 
-                        li:nth-child(1) {
-                            opacity: 0;
+                        li:nth-child(4) {
+                            
+                            img {
+                                width: 5.8em;
+                            }
                         }
                     }
                 }
@@ -258,33 +266,63 @@
 //KEYFRAMES 
 @keyframes clients-slide {
 
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+
     5% {
+        top: 0;
         opacity: 1;
     }
 
-    20% {
-        top: -0em;
+    30% {
+        top: -6em;
     }
 
-    40% {
-        top: -5em;
+    50% {
+        top: -12em;
     }
 
-    60% {
-        top: -10em;
-    }
-
-    80% {
-        top: -15em;
+    70% {
+        top: -18em;
     }
 
     95% {
+        top: -24em;
         opacity: 1;
-        top: -20em;
     }
 
-    98% {
+    100% {
+        top: -24em;
         opacity: 0;
+    }
+}
+
+@keyframes x {
+
+    0% {
+        top: 0;
+    }
+
+    26% {
+        top: -6em;
+    }
+
+    49% {
+        top: -12em;
+    }
+
+    72% {
+        top: -18em;
+    }
+
+    95% {
+        top: -24em;
+    }
+
+    100% {
+        top: 0;
     }
 }
 
