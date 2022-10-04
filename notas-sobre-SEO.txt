@@ -1,0 +1,31 @@
+INDEX
+    keywords= canteras, finas, piedras, canteras, cantera, onix, marmol, recinto, granito, placas, minerales.
+    description= Canteras Finas, vendedores y colocadores de piedras en México.
+
+ABOUTUS
+    keywords= sobre, nosotros, somos, canteras, finas, piedras, canteras.
+    description= Definición de nuestra identidad, mision, vision y valores como Canteras Finas.
+
+CONTACT
+    keywords= contacto, ayuda, atención, atencion, clientes, canteras, finas, piedras, canteras.
+    description= Completa el siguiente formulario y tengamos una platica sobre tu idea.
+
+MAINMATERIALS
+    keywords= materiales, principales, clientes, canteras, finas, piedras, canteras.
+    description= Nuestros principales materiales a la venta y a la espera de ser colocados en tu hogar.
+
+PROJECTS
+    keywords= principales, proyectos, trabajos, portfolio, portafolio, clientes, canteras, finas, piedras, canteras.
+    description= Nuestros proyectos más icónicos, que reflejan la calidad de nuestrso materiales y servicios de colocación.
+
+
+
+MULTIMEDIA
+- Tomé algunas imagenes de url absoluto.
+- Cambie algunas imagenes de enlace relativo a jpg y png.
+- Comprimí algunas imagenes.
+
+
+
+NOTA
+Incluí el sitemap del respositorio una vez concluido
