@@ -3,7 +3,8 @@
 @import './base/reset';
 
 //UTILITIES
-
+@import './utilities/mixin';
+@import './utilities/variable';
 
 //COMPONENTS
 @import './components/menuIcon';
@@ -15,10 +16,9 @@
 @import './layout/menu';
 @import './layout/footer';
 
-
 //VIEWS
 @import './views/indexView';
 @import './views/aboutUsView';
 @import './views/projectsView';
 @import './views/materialsView';
-@import './views/contact';
+@import './views/contactView';
