@@ -1267,10 +1267,7 @@
   100% {
     box-shadow: 0 0 0 0 #ffffff00; } }
 
-@media (max-height: 26.5625em) {
-  .contact-main-container .header {
-    height: 6.4em; }
-  .contact-main-container .main {
-    height: 40em; }
-  .contact-main-container .footer {
-    height: 6.4em; } }
+@media (max-height: 53.125em) {
+  .contact-main-container {
+    height: fit-content;
+    grid-template-rows: 5.4em 42.25em 5.5em; } }

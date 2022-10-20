@@ -207,7 +207,7 @@
     }
 
     .footer {
-        grid-area: footer; 
+        grid-area: footer;
         height: 100%;
         z-index: 3;
     }
@@ -240,23 +240,11 @@
 
 //MEDIA QUERIES
 
-//ORIENTATION: LANDSCAPE
-
-@media (max-height: 26.5625em) {
+@media (max-height: 53.125em) {
 
     .contact-main-container {
-
-        .header {
-            height: 6.4em;
-        }
-
-        .main {
-            height: 40em;
-        }
-
-        .footer {
-            height: 6.4em;
-        }
+        height: fit-content;
+        grid-template-rows: 5.4em 42.25em 5.5em;
     }
 
 }
